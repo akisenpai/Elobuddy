@@ -51,16 +51,19 @@ namespace AddonTemplate.Modes
         {
             if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && ObjectManager.Player.HasUndyingBuff())
             {
+                if (ObjectManager.Player.Model == "SRU_Dragon") return;
                 Player.SetModel("SRU_Dragon");
             }
 
             if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && !ObjectManager.Player.HasUndyingBuff() && ObjectManager.Player.ManaPercent == 100)
             {
+                if (ObjectManager.Player.Model == "ShyvanaKnightDragon") return;
                 Player.SetModel("ShyvanaKnightDragon");
             }
 
             if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && !ObjectManager.Player.HasUndyingBuff() && ObjectManager.Player.ManaPercent < 100)
             {
+                if (ObjectManager.Player.Model == "Tryndamere") return;
                 Player.SetModel("Tryndamere");
             }
         }
