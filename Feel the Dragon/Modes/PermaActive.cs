@@ -57,8 +57,8 @@ namespace AddonTemplate.Modes
 
             if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && !ObjectManager.Player.HasUndyingBuff() && ObjectManager.Player.ManaPercent == 100)
             {
-                if (ObjectManager.Player.Model == "ShyvanaKnightDragon") return;
-                Player.SetModel("ShyvanaKnightDragon");
+                if (ObjectManager.Player.Model == "ShyvanaDragon") return;
+                Player.SetModel("ShyvanaDragon");
             }
 
             if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && !ObjectManager.Player.HasUndyingBuff() && ObjectManager.Player.ManaPercent < 100)
