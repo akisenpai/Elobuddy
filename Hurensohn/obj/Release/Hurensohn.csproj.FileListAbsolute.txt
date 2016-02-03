@@ -1,0 +1,11 @@
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\AddonTemplate.exe.config
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\AddonTemplate.exe
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\AddonTemplate.pdb
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\EloBuddy.dll
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\EloBuddy.SDK.dll
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\SharpDX.dll
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\Newtonsoft.Json.dll
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\obj\Release\Hurensohn.csprojResolveAssemblyReference.cache
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\obj\Release\AddonTemplate.exe
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\obj\Release\AddonTemplate.pdb

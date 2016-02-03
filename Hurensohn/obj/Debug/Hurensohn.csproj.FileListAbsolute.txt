@@ -1,0 +1,2 @@
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Debug\AddonTemplate.exe.config
+C:\Users\Media\Desktop\Visual Studio 2015\EloBuddy-Addons-master\AddonTemplate\AddonTemplate\bin\Release\AddonTemplate.exe.config
