@@ -38,28 +38,34 @@ namespace AddonTemplate
             SpellManager.Initialize();
             ModeManager.Initialize();
 
-            Modes.PermaActive.LevelUpSpells();
             AbilitySequence = new[] { 1, 3, 2, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
             // Listen to events we need
             Drawing.OnDraw += OnDraw;
+            Game.OnTick += Game_OnTick;
         }
 
         private static void OnDraw(EventArgs args)
         {
             if (MenuManager.DrawingMenu["DrawE"].Cast<CheckBox>().CurrentValue)
             {
-                if (!(MenuManager.DrawingMenu["DrawOnlyReady"].Cast<CheckBox>().CurrentValue && !SpellManager.E.IsReady()))
+                if ((MenuManager.DrawingMenu["DrawOnlyReady"].Cast<CheckBox>().CurrentValue && SpellManager.E.IsReady()))
                 {
                     Circle.Draw(Color.Red, SpellManager.E.Range, ObjectManager.Player.Position);
                 }
             }
-            if (MenuManager.DrawingMenu["DrawQ"].Cast<CheckBox>().CurrentValue)
+            if (MenuManager.DrawingMenu["DrawW"].Cast<CheckBox>().CurrentValue)
             {
-                if (!(MenuManager.DrawingMenu["DrawOnlyReady"].Cast<CheckBox>().CurrentValue && !SpellManager.Q.IsReady()))
+                if ((MenuManager.DrawingMenu["DrawOnlyReady"].Cast<CheckBox>().CurrentValue && SpellManager.W.IsReady()))
                 {
-                    Circle.Draw(Color.Red, SpellManager.Q.Range, ObjectManager.Player.Position);
+                    Circle.Draw(Color.Red, SpellManager.W.Range, ObjectManager.Player.Position);
                 }
             }
+        }
+
+        public static void Game_OnTick(EventArgs args)
+        {
+            Modes.PermaActive.LevelUpSpells();
+            Modes.PermaActive.Dragonmode();
         }
     }
 }

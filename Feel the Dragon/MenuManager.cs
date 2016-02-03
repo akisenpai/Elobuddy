@@ -35,9 +35,9 @@ namespace AddonTemplate
 
         public static void Mainmenu()
         {
-            HMenu = MainMenu.AddMenu("Hurensohn", "hurensohn");
-            HMenu.AddGroupLabel("Welcome to my Hurensohn Addon have fun! :)");
-            HMenu.AddGroupLabel("Made by Hurensohn *-*");
+            HMenu = MainMenu.AddMenu("Tryndamere", "tryndamere");
+            HMenu.AddGroupLabel("FEEL THE DRAGON!");
+            HMenu.AddGroupLabel("By AkiSenpai");
         }
 
         public static void Combomenu()

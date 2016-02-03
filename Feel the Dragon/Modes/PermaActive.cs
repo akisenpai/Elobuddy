@@ -25,12 +25,6 @@ namespace AddonTemplate.Modes
             {
                 Q.Cast();
             }
-
-            if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue)
-            {
-                Player.SetModel("SRU_Dragon");
-            }
-
         }
 
         public static void LevelUpSpells()
@@ -51,6 +45,24 @@ namespace AddonTemplate.Modes
             if (wL < level[1]) ObjectManager.Player.Spellbook.LevelSpell(SpellSlot.W);
             if (eL < level[2]) ObjectManager.Player.Spellbook.LevelSpell(SpellSlot.E);
             if (rL < level[3]) ObjectManager.Player.Spellbook.LevelSpell(SpellSlot.R);
+        }
+
+        public static void Dragonmode()
+        {
+            if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && ObjectManager.Player.HasUndyingBuff())
+            {
+                Player.SetModel("SRU_Dragon");
+            }
+
+            if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && !ObjectManager.Player.HasUndyingBuff() && ObjectManager.Player.ManaPercent == 100)
+            {
+                Player.SetModel("ShyvanaKnightDragon");
+            }
+
+            if (MenuManager.ComboMenu["dragon"].Cast<CheckBox>().CurrentValue && !ObjectManager.Player.HasUndyingBuff() && ObjectManager.Player.ManaPercent < 100)
+            {
+                Player.SetModel("Tryndamere");
+            }
         }
     }
 }
