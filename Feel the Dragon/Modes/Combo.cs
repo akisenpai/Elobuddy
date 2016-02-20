@@ -30,11 +30,6 @@ namespace AddonTemplate.Modes
             {
                 E.Cast(target.Position);
             }
-
-            if (MenuManager.ComboMenu["ComboUseR"].Cast<CheckBox>().CurrentValue)
-            {
-                Damagecheck();
-            }
         }
 
         public static void Damagecheck()

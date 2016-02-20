@@ -25,6 +25,11 @@ namespace AddonTemplate.Modes
             {
                 Q.Cast();
             }
+
+            if (MenuManager.ComboMenu["ComboUseR"].Cast<CheckBox>().CurrentValue)
+            {
+                Combo.Damagecheck();
+            }
         }
 
         public static void LevelUpSpells()

@@ -46,7 +46,7 @@ namespace AddonTemplate
             ComboMenu.AddGroupLabel("Combo");
             ComboMenu.Add("ComboUseW", new CheckBox("Use W"));
             ComboMenu.Add("ComboUseE", new CheckBox("Use E"));
-            ComboMenu.Add("ComboUseR", new CheckBox("Use R"));
+            ComboMenu.Add("ComboUseR", new CheckBox("Use R(PermaActive)"));
             ComboMenu.Add("dragon", new CheckBox("Dragonmode", false));
         }
 
